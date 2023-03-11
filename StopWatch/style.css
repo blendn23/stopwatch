@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(21, 106, 106);
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Stopwatch{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.time{
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+button{
+    padding: .8rem 2.5rem;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+#start-btn{
+    background: rgb(54, 192, 155);
+}
+
+#stop-btn{
+    background: rgb(108, 142, 229);
+}
+
+#reset-btn{
+    background: rgb(248, 84, 84);
+}
+
+#start-btn:hover{
+    background: rgb(11, 62, 45);
+}
+
+#stop-btn:hover{
+    background: rgb(27, 41, 75);
+}
+#reset-btn:hover{
+    background: rgb(143, 29, 29);
+}
+@media only screen and (max-width:780px){
+    .time{
+        font-size: 5rem;
+    }
+
+    #Stopwatch{
+        font-size: 3rem;
+    }
+    button{
+        padding: .8rem 2rem;
+       
+    }
+}
+
+@media only screen and (max-width:415px){
+    .time{
+        font-size: 3rem;
+    }
+
+    #Stopwatch{
+        font-size: 1rem;
+    }
+
+    button{
+        padding: .6rem 1rem;
+    }
+}
+
+
